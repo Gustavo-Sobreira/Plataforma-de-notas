@@ -1,0 +1,115 @@
+.pagina{
+
+    background-color: rgb(217, 228, 122);
+
+}
+
+/*Cabeçalho*/
+
+.ftCabecalho{
+
+    margin-top: 100px;
+    margin-left: 285px;
+
+
+    box-shadow: 0px 0px 9px 4px rgb(0, 0, 0);
+    
+}
+
+.titulo{
+
+    position: relative;
+    top: 200px;
+    left: 544px;
+
+    font-size: 30px;
+    text-shadow: 1.2px 3px 2px black;
+
+    
+
+    color: rgb(0, 0, 0);
+    
+}
+
+
+/*Corpo*/
+
+.corpo{
+
+    
+    margin-top: 0px;
+    margin-left: 285px;
+    margin-right: 280px;
+
+    padding: 22px;
+
+    background-color:black;
+    box-shadow: 0px 0px 9px 4px rgb(0, 0, 0);
+
+}
+
+.funcoes{
+    
+    border-top: 1px rgba(217, 228, 122, 0.100) solid;
+    border-bottom: 1px rgba(217, 228, 122, 0.100) solid;
+
+    color: rgb(217, 228, 122);
+    
+    
+    font-size:12px;
+    
+
+    width: 10%;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+/*Cronometro*/
+.visor{
+
+    margin-left: 44%;
+
+    font-size: 30px;
+    
+    color:rgb(255, 255, 255);
+    padding-top: 20px;
+
+
+}
+
+
+
+.botao{
+
+    background-color:green;
+    color: white;
+    
+    font-size:16px;
+
+    height: 43px;
+    margin: 10px 5px 10px;
+
+    border-radius: 15px;
+    border-top: black;
+    border-left: black;
+    
+    
+    
+    text-align: center;
+    width: 13%;
+    
+
+}
+
+.linha{
+
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -60px;
+    margin-left: 70px;
+    text-align: center;
+
+}
+
