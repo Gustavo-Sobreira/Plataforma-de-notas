@@ -1,0 +1,17 @@
+.aprovados{
+
+    display: none;
+    /*Até o js mudar*/
+
+    margin-left: 18%;
+    margin-right: 3%;
+    margin-top: 1%;
+
+    padding-top: 3%;
+
+    background-color: white;
+
+    border-radius: 10px;
+    border-left:blue 2px solid;
+
+}

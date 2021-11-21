@@ -1,0 +1,39 @@
+.final{
+    
+    margin-top: 40%;
+    margin-left: 33%;
+
+}
+.final ul li{
+
+    display: inline;
+
+    text-align: center;
+
+    
+
+}
+.final ul li a{
+    
+    color: rgb(217, 228, 122);
+
+    font-size:10px;
+    
+    padding: 1%;
+      
+}
+.separa{
+
+    border-right: 0.1px white solid;
+    
+} /*foi o modo que achei para separar */
+
+.aluno{
+
+    margin-top: 3%;
+    
+    text-align: center;
+    color:white;
+    font-size:10px
+    
+}

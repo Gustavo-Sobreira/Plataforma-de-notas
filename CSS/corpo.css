@@ -1,0 +1,37 @@
+a:link, a:visited {
+	text-decoration: none
+}
+
+.menu{
+
+    margin-top:0%;
+    padding-left: 2%;
+
+}
+.menu ul li{
+
+    border-top: 1px rgba(229, 255, 0, 0.211) solid;
+    border-bottom: 1px rgba(229, 255, 0, 0.211) solid;
+
+    width: 15%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.menu ul li a {
+    
+    color: rgb(217, 228, 122);    
+    
+    font-size: 16px;
+    
+}
+.painel{
+
+    color: rgb(217, 228, 122);    
+    
+    font-size: 16px;
+
+    margin-left: 18%;
+    padding-top: 3%;
+    
+}
