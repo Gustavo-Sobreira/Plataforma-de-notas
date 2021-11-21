@@ -24,6 +24,12 @@ body{
 
 }
 
+button:hover{
+
+    cursor: pointer;
+
+}
+
 /*Cabeçalho*/
 .cabecalho{
 
@@ -102,11 +108,16 @@ a:link, a:visited {
 
     margin-top:15%;
     margin-left: 44%;
+    margin-right: 25%;
 
-    font-size: 30px;
+    font-size: 26px;
     
     color:rgb(255, 255, 255);
-    padding-top: 20px;
+    
+
+    
+
+    
 
 
 }
@@ -182,6 +193,132 @@ a:link, a:visited {
     color:white;
     font-size:10px
     
+}
+
+/*Cadastro*/
+.cadastro{
+    
+    display: none;
+    /*Até o js mudar*/
+
+    margin-left: 18%;
+    margin-right: 3%;
+    margin-top: 1%;
+
+    padding-top: 3%;
+
+    background-color: white;
+
+    border-radius: 10px;
+    border-left: green 2px solid;
+
+}
+
+.tituloCad{
+
+    font-size:16px;
+
+    color: black;
+
+    margin-left: 1.5%;
+
+    font-weight: bolder;
+
+}
+
+.orientacao{
+
+    font-size: 14px;
+
+    color:rgb(75, 97, 75);
+
+    margin-left: 1.5%;
+    margin-top: 1.5%;
+
+}
+
+.btnSalvar{
+
+    background-color:green;
+    color: white;
+    
+    font-size:12px;
+
+    height: 23px;
+    margin: 10px 5px 10px;
+
+    border-radius: 15px;
+    border-color: black;
+    
+    
+    
+    text-align: center;
+    width: 28%;
+
+}
+
+.btnConfig{
+    
+    border: none;
+
+    margin-left: 60%;
+    
+    font-size: 20px;
+
+    
+}
+
+#cadastrar{
+
+    border: none;
+    border-bottom: 1px solid rgba(75, 97, 75, 0.35) ;
+    
+    margin-left: 2%;
+    margin-right: 55%;
+    margin-top:5%;
+
+    width: 40%;
+    height: 10px;
+
+    font-size:10px;
+
+}
+
+/*Aprovados*/
+.aprovados{
+
+    display: none;
+    /*Até o js mudar*/
+
+    margin-left: 18%;
+    margin-right: 3%;
+    margin-top: 1%;
+
+    padding-top: 3%;
+
+    background-color: white;
+
+    border-radius: 10px;
+    border-left:blue 2px solid;
+
+}
+
+/*Reprovados*/
+.reprovados{
+
+    display: none;
+    /*Até o js mudar*/
+
+    margin-left: 18%;
+    margin-right: 3%;
+    margin-top: 1%;
+
+    padding-top: 3%;
+
+    background-color: white;
+
+    border-radius: 10px;
+    border-left:red 2px solid;
 
 }
 

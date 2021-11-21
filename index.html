@@ -28,7 +28,7 @@
     
         <main>
     
-            <h3 class="visor"> ▶️ 00:00:00:000</h3>
+            <h3 class="visor" id="watch"> ▶️ 00:00:00:000</h3>
     
             <nav class="menu">
                     <ul>
@@ -52,18 +52,50 @@
             </nav> <!--Caixa onde fica o menu lateral-->      
                            
             <div class=linha>
-    
-                    <button name="btn1" class="botao">iniciar</button>
-                    <button name="btn2" class="botao">pausar </button>
-                    <button name="btn3" class="botao">parar  </button>
-                    <button name="btn4" class="botao">zerar  </button>
+                
+                    <button data-gs="i" type="button" name="btn1" class="botao" onclick="iniciar()">iniciar</button>
+
+                    <button data-gs="p" type="button" name="btn2" class="botao" onclick="pausar()">pausar </button>
+
+                    <button data-gs="x" type="button" name="btn3" class="botao" onclick="parar()">parar</button>
+
+                    <button data-gs="z" type="button" name="btn4" class="botao" onclick="zerar()" >zerar</button>
+
+                    
     
             </div> <!--Caixa onde fica os botões-->
     
             <h3 class="painel">Painel</h3>
     
-              
-    
+<!--Após clicar em cadastrar mostra-se está página-->
+            <div class="cadastro">
+                <h4 class="tituloCad">Cadastro</h4>
+                <p class="orientacao">informe o nome e a nota</p>
+
+                <input placeholder="Nome: " type="text" name="infoNome" id="cadastrar">
+
+                <input placeholder="Nota: " type="number" name="infoNota" id="cadastrar">
+
+                <button class="btnSalvar">Salvar</button>
+                <button class="btnConfig">⚙️</button>
+                
+            </div>
+
+<!--Após clicar em Aprovados-->
+            <div class="aprovados">
+
+                <h4 class="tituloCad">Alunos Aprovados</h4>
+                <p class="orientacao">confira a lista dos aprovados</p>
+                
+            </div>
+
+<!--Após clicar em Reprovados-->
+            <div class="reprovados">
+
+                <h4 class="tituloCad">Alunos Reprovados</h4>
+                <p class="orientacao">confira a lista dos reprovados</p>
+                
+            </div>
         </main>
     
         <footer>
@@ -94,6 +126,7 @@
 
     </div>
 
+    <script src="JS/script.js"></script>
     
 </body>
 </html>
