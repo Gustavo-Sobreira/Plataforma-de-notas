@@ -1,13 +1,11 @@
 .aprovados{
 
-    display: none;
-    /*Até o js mudar*/
-
     margin-left: 18%;
     margin-right: 3%;
     margin-top: 1%;
 
     padding-top: 3%;
+    padding-bottom: 1%;
 
     background-color: white;
 
@@ -15,3 +13,38 @@
     border-left:blue 2px solid;
 
 }
+
+.linha2{
+
+    background-color:black;
+    width: 98%;
+
+    margin: 0 auto;
+
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+}
+.contorno{
+    border-radius: 1px black solid;
+}
+.tituTabela{
+
+    color: rgb(217, 228, 122);
+    
+    padding-left: 11%;
+    padding-right: 11%;
+
+
+}
+
+.nomeTabela{
+    
+    color: black;
+    
+    padding-left: 11%;
+    padding-right: 11%;
+
+
+}
+

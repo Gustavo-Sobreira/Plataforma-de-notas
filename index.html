@@ -42,19 +42,19 @@
             <nav class="menu">
                     <ul>
                         <li>
-                            <a href="">Home</a>
+                            <button id="btnHome">Home</button>
                         </li>
     
                         <li>
-                            <a href="">Cadastrar</a>
+                            <button type="button" id="btnCad">Cadastrar</button>
                         </li>
     
                         <li>
-                            <a href="">Aprovados</a>
+                            <button id="btnApro">Aprovados</button>
                         </li>
     
                         <li>
-                            <a href="">Reprovados</a>
+                            <button id="btnRepr">Reprovados</button>
                         </li>
                         
                     </ul>
@@ -77,7 +77,9 @@
             <h3 class="painel">Painel</h3>
     
 <!--Após clicar em cadastrar mostra-se está página-->
-            <div class="cadastro">
+
+            <div id="pagCad"class="cadastro hide">
+
                 <h4 class="tituloCad">Cadastro</h4>
                 <p class="orientacao">informe o nome e a nota</p>
 
@@ -85,21 +87,39 @@
 
                 <input placeholder="Nota: " type="number" name="infoNota" id="cadastrar">
 
-                <button class="btnSalvar">Salvar</button>
+                <button id="btnSave" class="btnSalvar">Salvar</button>
                 <button class="btnConfig">⚙️</button>
                 
             </div>
 
 <!--Após clicar em Aprovados-->
-            <div class="aprovados">
+
+            <div id="pagApro" class="aprovados hide">
 
                 <h4 class="tituloCad">Alunos Aprovados</h4>
                 <p class="orientacao">confira a lista dos aprovados</p>
+
+                <div class="contorno">
+                    <div class="linha2">
+
+                        <a class="tituTabela">NOME</a>
+                        <a class="tituTabela">NOTA</a>
+                        <a class="tituTabela">STATUS</a>
+                        
+                    </div>
+
+                    <div >
+                        <h1 class="nomeTabela"></h1>
+                    </div>
+                </div>
+                
+                
                 
             </div>
 
 <!--Após clicar em Reprovados-->
-            <div class="reprovados">
+
+            <div id="pagRepr" class="reprovados hide">
 
                 <h4 class="tituloCad">Alunos Reprovados</h4>
                 <p class="orientacao">confira a lista dos reprovados</p>
@@ -135,7 +155,9 @@
 
     </div>
 
-    <script src="JS/script.js"></script>
+    <script src="JS/cronometro.js"></script>
+    <script src="JS/paginas.js"></script>
+    <script src="JS/cadastrados.js"></script>
     
 </body>
 </html>
