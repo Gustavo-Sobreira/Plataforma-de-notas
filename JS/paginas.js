@@ -10,6 +10,7 @@ let btn3 = document.querySelector("#btnApro")
 let btn4 = document.querySelector("#btnRepr")
 
 
+
 /* Páginas */
 
 let form1 = document.querySelector("#pagCad")
@@ -17,6 +18,7 @@ let form1 = document.querySelector("#pagCad")
 let form2 = document.querySelector("#pagApro")
 
 let form3 = document.querySelector("#pagRepr")
+
 
 
 /* Eventos */ 
@@ -56,3 +58,5 @@ btn4.addEventListener("click",()=>{
     form3.className="reprovados"
 
 })
+
+

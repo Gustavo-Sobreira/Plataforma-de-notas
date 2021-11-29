@@ -74,18 +74,30 @@
     
             </div> <!--Caixa onde fica os botões-->
     
-            <h3 class="painel">Painel</h3>
+            <h3 class="painel" id="painel">Painel</h3>
     
 <!--Após clicar em cadastrar mostra-se está página-->
 
-            <div id="pagCad"class="cadastro hide">
+            <div id="pagCad"class="cadastro hide ">
 
                 <h4 class="tituloCad">Cadastro</h4>
                 <p class="orientacao">informe o nome e a nota</p>
 
-                <input placeholder="Nome: " type="text" name="infoNome" id="cadastrar">
+                <div class="single-input">
 
-                <input placeholder="Nota: " type="number" name="infoNota" id="cadastrar">
+                    <input type="text" id="infoNome" required>
+                    <label for="infoNome">Nome</label>
+
+                </div>
+                
+                <div class="single-input">
+
+                    <input type="number" id="infoNota" required>
+                    <label for="infoNome">Nota</label>
+                    
+                </div>
+
+                
 
                 <button id="btnSave" class="btnSalvar">Salvar</button>
                 <button class="btnConfig">⚙️</button>
@@ -94,7 +106,7 @@
 
 <!--Após clicar em Aprovados-->
 
-            <div id="pagApro" class="aprovados hide">
+            <div id="pagApro" class="aprovados ">
 
                 <h4 class="tituloCad">Alunos Aprovados</h4>
                 <p class="orientacao">confira a lista dos aprovados</p>

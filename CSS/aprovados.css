@@ -21,13 +21,15 @@
 
     margin: 0 auto;
 
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     
 }
+
 .contorno{
     border-radius: 1px black solid;
 }
+
 .tituTabela{
 
     color: rgb(217, 228, 122);
@@ -47,4 +49,3 @@
 
 
 }
-

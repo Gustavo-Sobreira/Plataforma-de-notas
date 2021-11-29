@@ -7,6 +7,11 @@ let btnSalvar = document.querySelector("#btnSave")
 
 let btnApro = document.querySelector("#btnApro")
 
+let btnRepr = document.querySelector("#btnRepr")
+
+let btnHome = document.querySelector("btnHome")
+
+
 
 /* Fazer cadastro */
 btnSalvar.addEventListener("click",()=> {
@@ -27,50 +32,69 @@ btnSalvar.addEventListener("click",()=> {
 
 })
 
-/* Direcionar notas */
-btnSalvar.addEventListener("click",()=>{
+/* Aprovados */
+btnApro.addEventListener("click",()=>{
 
-    let aprovados = []
+    let aprovados = 0
 
-    let reprovados = []
+    //Não é um pronome neutro é só pq já tinha usado 
 
-    dados.forEach((alun) => {
-        
-        if (alun.nota > 5 && alun.nota <= 10){
+    dados.forEach( (alun)=>{
 
-            let apro ={
+        if (parseFloat(alun.nota)<= 10 && parseFloat(alun.nota) >= 0){
 
-                nome: alun.nome,
-                nota: alun.nota,
+            if (parseFloat(alun.nota) > 5 && parseFloat(alun.nota) <= 10){
 
+                aprovados += 1
             }
-
-            aprovados.push( apro )
-        }
-
-        else if (alun.nota <= 5 && alun.nota >= 0){
-            
-            let repro ={
-
-                nome: alun.nome,
-                nota: alun.nota,
-
-            }
-
-            reprovados.push( repro )
-        }
-
-        else{
-
-            campos.item(0).value = ''
-            campos.item(1).value = ''
 
         }
         
     })
+
+    let dvAprovados = document.createElement("div")
+
+    dvAprovados.className = "painel"
+    dvAprovados.innerHTML = "Painel (" + aprovados + " aluno(s) aprovado(s)"
+    
+
+    let dv = document.getElementsByClassName("painel")
+
+    dv[0].append(dvAprovados)
+    dv[0].classList.remove("painel")
     
 })
 
+/* Reprovados */
+btnRepr.addEventListener("click",()=>{
 
+    let reprovados = 0
 
+    //Não é um pronome neutro é só pq já tinha usado 
+
+    dados.forEach( (alun)=>{
+
+        if (parseFloat(alun.nota)<= 10 && parseFloat(alun.nota) >= 0){
+
+            if (parseFloat(alun.nota) <= 5 && parseFloat(alun.nota) >= 0){
+
+                reprovados += 1
+            }
+
+        }
+        
+    })
+
+    let dvReprovados = document.createElement("div")
+
+    dvReprovados.className = "painel"
+    dvReprovados.innerHTML = "Painel (" + reprovados + " aluno(s) reprovado(s)"
+    
+
+    let dv = document.getElementsByClassName("painel")
+
+    dv[0].append(dvReprovados)
+    dv[0].classList.remove("painel")
+    
+})
 
